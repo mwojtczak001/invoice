@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Creator</title>
+  <link rel="stylesheet" href="invoicecreator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h3>Invoice creator</h3>
+    <h5>Thank you for choosing WojCorp, LLC!</h5>
+  </header>
+  
+  <main class="invoice-info-container">
+    <section class="task-and-amount-container">
+      <input required type="text" placeholder="Enter task" class="task-input" id="task-input">
+      <select id="prices">
+        <option value="$10">$10</option>
+        <option value="$20">$20</option>
+        <option value="$30">$30</option>
+        <option value="$50">$50</option>
+        <option value="$100">$100</option>
+        <option value="$200">$200</option>
+      </select>
+      <button class="add-task-btn">+</button>
+    </section>
+
+    <section class="current-task-list-container">
+      <div class="task-total-container">
+        <p class="task">Task</p>
+        <p class="total">Total</p>
+      </div>
+      <!-- <div class="task-total-container">
+        <p class="task">Wash Car <span class="remove">Remove</span></p>
+        <p class="total">$10</p>
+      </div>
+      <div class="task-total-container">
+        <p class="task">Mow lawn <span class="remove">Remove</span></p>
+        <p class="total">$20</p>
+      </div> -->
+    </section>
+
+    <section class="notes-and-total-container">
+      <div class="task-total-container">
+        <p class="task">NOTES</p>
+        <p class="total">TOTAL AMOUNT</p>
+      </div>
+      <div class="task-total-container">
+        <p class="task payment">We accept cash, credit card, or Google Play Gift Cards</p>
+        <p class="total invoice-total"></p>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script type="module" src="invoicecreator.js"></script>
+</body>
+</html>
